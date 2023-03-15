@@ -4,18 +4,21 @@ let clear = false;
 let values = [];
 let total = 0;
 
+/* to calculate degree */
 function deg(){
     str = ((i.value*Math.PI)/180).toPrecision(10);
     i.value = str;
     setClearToTrue();
 }
 
+/* to covert to e+ */
 function fe(){
     str = Number.parseFloat(i.value).toExponential(5);
     i.value  = str;
     setClearToTrue();
 }
 
+/* all the memory functions */
 function addAsPositive(){
     values.push(Math.abs(i.value));
     setClearToTrue();
@@ -44,6 +47,7 @@ function mrValues(){
     setClearToTrue();
 }
 
+/* add values to input field everytime user clicks it */
 function add(val) {
     if (clear) {
         str = "";
@@ -52,7 +56,7 @@ function add(val) {
     str += val;
     i.value = str;
 }
-
+/* call this function when user presses = */
 function solve() {
     try {
         let y = eval(str);
@@ -68,12 +72,12 @@ function solve() {
         setClearToTrue();
     }
 }
-
+/* clear everything */
 function clearinput() {
     str = "";
     i.value = str;
 }
-
+/* backspace button */
 function backspace() {
     str = str.substring(0, str.length - 1);
     i.value = str;
@@ -113,11 +117,13 @@ function factorial() {
     i.value = str;
     setClearToTrue();
 }
+
 function _10x(){
     str = Math.pow(10,i.value);
     i.value  = str;
     setClearToTrue();
 }
+
 function ln(){
     str = Math.log(i.value);
     i.value  = str;
@@ -189,7 +195,7 @@ function exp(){
     i.value  = str;
     setClearToTrue();
 }
-
+/* switch between + and - */
 function plusminus(){
     if(Number(i.value)<0)
         str = i.value.substring(1);
@@ -205,6 +211,7 @@ function random(){
 
 }
 
+/* clear output after user press a new button */
 function setClearToTrue(){
     clear = true;
 }

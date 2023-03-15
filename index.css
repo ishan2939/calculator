@@ -14,19 +14,18 @@ body{
     width: 100vw;
     height: 100vh;
 }
-
+/* main container */
 .calculator{
     width: 25%;
     min-width: 450px;
     margin: 20px;
     padding: 15px;
-    /* border: 2px solid grey; */
     background-color: #333;
     color: #fff;
     border-radius: 15px;
     box-shadow: rgb(100, 100, 111) 0px 7px 29px 0px;
 }
-
+/* input field */
 .calculator .input{
     width: 100%;
     padding: 10px;
@@ -35,7 +34,6 @@ body{
     font-weight: 500;
     border: none;
     outline: none;
-    /* background-color: rgb(173, 173, 173); */
     background-color: #333;
     color: #fff;
 }
@@ -43,12 +41,12 @@ body{
 .calculator .input::placeholder{
     color: rgb(179, 177, 177);
 }
-
+/* operations bar */
 .operations1, .operations2, .operations3, .operations4{
     display: grid;
     gap: 2px 2px;
 }
-
+/* container for individual operation elements */
 .itemof1, .itemof2, .itemof3, .itemof4, .itemof3 .submenu .subitem{
     display: flex;
     justify-content: center;
@@ -74,14 +72,12 @@ sup{
 }
 
 .operations3{
-    /* grid-template-columns: 166px 166px; */
     grid-template-columns: auto auto;
     margin-bottom: 2px;
 }
 
 .operations4{
     grid-template-columns: auto auto auto auto auto;
-    /* background-color: rgb(65, 65, 65); */
     padding: 2px;
     gap: 4px 4px;
 }
@@ -108,10 +104,11 @@ sup{
     position: relative;
 }
 
+/* icons for trigonomentry and function */
 .itemof3 img, .itemof4 img{
     width: 20px;
 }
-
+/* drop down arrow */
 .itemof3 svg{
     transform: rotate(-90deg);
     transition: .3s;
@@ -120,7 +117,7 @@ sup{
 .itemof3:hover svg{
     transform: rotate(90deg);
 }
-
+/* submenu */
 .itemof3 .submenu{
     position: absolute;
     display: grid;
@@ -134,9 +131,11 @@ sup{
     display: none;
     transition: .5s;
 }
+
 .itemof3:hover .submenu{
     display: grid;
 }
+
 .itemof3 .submenu .subitem{
     background-color: rgb(70,70,70);
     font-size: 14px;
@@ -154,7 +153,7 @@ sup{
 .itemof1:hover, .itemof2:hover, .itemof3:hover, .itemof4:hover, .itemof3 .submenu .subitem:hover{
     background-color: rgb(65,65,65);
 }
-
+/* select the = button */
 .itemof4:last-child{
     background-color: rgb(255, 160, 51);
 }
@@ -162,19 +161,24 @@ sup{
 .itemof4:last-child:hover{
     background-color: rgb(252, 134, 0);
 }
+/* to highligh the main operation */
 .main{
     background-color: rgb(80,80,80);
     font-weight: 700;
 }
+/* for clear button */
 .clear{
     background-color: rgb(64, 179, 224);
 }
+
 .clear:hover{
     background-color: rgb(26, 168, 224);
 }
+/* backspace button */
 .back{
     background-color: rgb(227, 66, 52);
 }
+
 .back:hover{
     background-color: rgb(226, 38, 21);
 }
