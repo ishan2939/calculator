@@ -14,15 +14,15 @@
         <input type="text" class="input" id="iput" placeholder="0" disabled>
 
         <div class="operations1">
-            <div class="itemof1">deg</div>
-            <div class="itemof1">f-e</div>
+            <div class="itemof1" onclick="deg()">deg</div>
+            <div class="itemof1" onclick="fe()">f-e</div>
         </div>
 
         <div class="operations2">
-            <div class="itemof2">mc</div>
-            <div class="itemof2">mr</div>
-            <div class="itemof2">m+</div>
-            <div class="itemof2">m-</div>
+            <div class="itemof2" onclick="clearValues()">mc</div>
+            <div class="itemof2" onclick="mrValues()">mr</div>
+            <div class="itemof2" onclick="addAsPositive()">m+</div>
+            <div class="itemof2" onclick="addAsNegative()">m-</div>
             <!-- <div class="itemof2">ms</div> -->
         </div>
 
@@ -36,12 +36,12 @@
                         class="_2gTTdy"></path>
                 </svg>
                 <div class="submenu">
-                    <div class="subitem">sin</div>
-                    <div class="subitem">cos</div>
-                    <div class="subitem">tan</div>
-                    <div class="subitem">sinh</div>
-                    <div class="subitem">cosh</div>
-                    <div class="subitem">tanh</div>
+                    <div class="subitem" onclick = "sin()">sin</div>
+                    <div class="subitem" onclick = "cos()">cos</div>
+                    <div class="subitem" onclick = "tan()">tan</div>
+                    <div class="subitem" onclick = "sinh()">sinh</div>
+                    <div class="subitem" onclick = "cosh()">cosh</div>
+                    <div class="subitem" onclick = "tanh()">tanh</div>
                 </div>
             </div>
 
@@ -53,12 +53,12 @@
                         class="_2gTTdy"></path>
                 </svg>
                 <div class="submenu">
-                    <div class="subitem">x<sup>2</sup></div>
-                    <div class="subitem"><sup>1</sup>/x</div>
-                    <div class="subitem">|x|</div>
-                    <div class="subitem">exp</div>
-                    <div class="subitem">mod</div>
-                    <div class="subitem">rand</div>
+                    <div class="subitem" onclick="x2()">x<sup>2</sup></div>
+                    <div class="subitem" onclick="_1byx()"><sup>1</sup>/x</div>
+                    <div class="subitem" onclick="modex()">|x|</div>
+                    <div class="subitem" onclick="exp()">exp</div>
+                    <div class="subitem" onclick="add('%')">mod</div>
+                    <div class="subitem" onclick="random()">rand</div>
                 </div>
             </div>
 
@@ -67,32 +67,32 @@
         <div class="operations4">
 
             <div class="itemof4">2<sup>nd</sup></div>
-            <div class="itemof4">&#960;</div>
-            <div class="itemof4">e</div>
-            <div class="itemof4" onclick="clear()">C</div>
-            <div class="itemof4" onclick="back()"><img src="images/back.png" alt="back"></div>
-            <div class="itemof4">&#8730;x</div>
+            <div class="itemof4" onclick="pi()">&#960;</div>
+            <div class="itemof4" onclick="e()">e</div>
+            <div class="itemof4 clear" onclick="clearinput()">C</div>
+            <div class="itemof4 back" onclick="backspace()"><img src="images/back.png" alt="back"></div>
+            <div class="itemof4" onclick="squareroot()">&#8730;x</div>
             <div class="itemof4" onclick="add('(')">(</div>
-            <div class="itemof4"onclick="add(')')">)</div>
-            <div class="itemof4">n!</div>
-            <div class="itemof4"onclick="add('/')"><img src="images/division.png" alt="division"></div>
-            <div class="itemof4">x<sup>y</sup></div>
+            <div class="itemof4" onclick="add(')')">)</div>
+            <div class="itemof4" onclick="factorial()">n!</div>
+            <div class="itemof4" onclick="add('/')"><img src="images/division.png" alt="division"></div>
+            <div class="itemof4" onclick="add('**')">x<sup>y</sup></div>
             <div class="itemof4 main"onclick="add('7')">7</div>
             <div class="itemof4 main"onclick="add('8')">8</div>
             <div class="itemof4 main"onclick="add('9')">9</div>
-            <div class="itemof4"onclick="add('*')"><img src="images/multiplication.png" alt="multiplication"></div>
-            <div class="itemof4">10<sup>x</sup></div>
+            <div class="itemof4" onclick="add('*')"><img src="images/multiplication.png" alt="multiplication"></div>
+            <div class="itemof4" onclick="_10x()">10<sup>x</sup></div>
             <div class="itemof4 main"onclick="add('4')">4</div>
             <div class="itemof4 main"onclick="add('5')">5</div>
             <div class="itemof4 main"onclick="add('6')">6</div>
-            <div class="itemof4"onclick="add('-')"><img src="images/substraction.png" alt="substraction"></div>
-            <div class="itemof4">log</div>
+            <div class="itemof4" onclick="add('-')"><img src="images/substraction.png" alt="substraction"></div>
+            <div class="itemof4" onclick="log()">log</div>
             <div class="itemof4 main"onclick="add('1')">1</div>
             <div class="itemof4 main"onclick="add('2')">2</div>
             <div class="itemof4 main"onclick="add('3')">3</div>
-            <div class="itemof4"onclick="add('+')"><img src="images/plus.png" alt="addition"></div>
-            <div class="itemof4">ln</div>
-            <div class="itemof4 main"><sup>+</sup>/-</div>
+            <div class="itemof4" onclick="add('+')"><img src="images/plus.png" alt="addition"></div>
+            <div class="itemof4" onclick="ln()">ln</div>
+            <div class="itemof4 main" onclick="plusminus()">+ / -</div>
             <div class="itemof4 main"onclick="add('0')">0</div>
             <div class="itemof4 main"onclick="add('.')">.</div>
             <div class="itemof4" onclick="solve()"><img src="images/equal.png" alt="equal to"></div>
