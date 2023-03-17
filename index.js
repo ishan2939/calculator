@@ -25,7 +25,10 @@ function addAsPositive(){
 }
 
 function addAsNegative(){
-    values.push((i.value)*(-1));
+    if(i.value>0)
+        values.push(Number((i.value)*(-1)));
+    else
+        values.push(Number(i.value));
     setClearToTrue();
 }
 
